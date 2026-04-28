@@ -1,3 +1,3 @@
-﻿* linguist-detectable=false
-ApiService/** linguist-detectable=true
+﻿ingestWorker/internal/parser/** linguist-vendored
+ingestWorker/internal/storage/** linguist-vendored
 ApiService/**/*.cs linguist-language=C#
