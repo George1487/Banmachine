@@ -1,0 +1,11 @@
+# GitHub Linguist tuning: show this repository primarily as C#
+
+# Exclude non-C# services from language statistics
+ingestWorker/** linguist-detectable=false
+analysisWorker/** linguist-detectable=false
+frontend/** linguist-detectable=false
+migrations/** linguist-detectable=false
+
+# Keep C# code explicitly detectable
+ApiService/** linguist-detectable=true
+*.cs linguist-language=C#
