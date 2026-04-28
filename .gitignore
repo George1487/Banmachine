@@ -1,0 +1,52 @@
+# Env files and local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+
+# .NET local config with secrets
+ApiService/Web/appsettings*.json
+!ApiService/Web/appsettings.template.json
+
+# Sensitive key/cert formats
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.crt
+*.cer
+id_rsa
+id_dsa
+known_hosts
+
+# Local secret/override patterns
+secrets/
+**/secrets/
+*.secret
+*.secrets.json
+docker-compose.override.yml
+
+# Build and IDE artifacts
+node_modules/
+dist/
+.DS_Store
+.idea/
+.vs/
+.vscode/
+**/bin/
+**/obj/
+ApiService/artifacts/
+
+# Keep required build manifest
+!analysisWorker/requirements.txt
+
+# Misc local files
+*.docx
+frontend/docs
+docs/
+scripts/

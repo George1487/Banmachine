@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 20% -20%, #f4a26122 0 220px, transparent 290px),
+    radial-gradient(circle at 100% 0, #2a9d8f1f 0 260px, transparent 340px),
+    var(--bg);
+  font-family: var(--font-ui);
+  font-weight: 500;
+}
+
+a {
+  color: var(--accent);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.container {
+  width: min(var(--max-content-width), calc(100% - 48px));
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
+
+.card-surface {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf7 100%);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent), white 15%);
+  outline-offset: 2px;
+}

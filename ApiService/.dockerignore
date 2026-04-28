@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+artifacts/
+.idea/
+.vs/
+.git/
+.gitignore
+README.md

@@ -1,0 +1,20 @@
+.fade-up-enter-active,
+.fade-up-leave-active {
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.fade-up-enter-from,
+.fade-up-leave-to {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.quick-fade-enter-active,
+.quick-fade-leave-active {
+  transition: opacity 160ms ease;
+}
+
+.quick-fade-enter-from,
+.quick-fade-leave-to {
+  opacity: 0;
+}
